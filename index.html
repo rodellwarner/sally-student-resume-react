@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Sally Student - About Me</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="application-root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      ReactDOM.render(
+        <main>
+          <header>
+            <h1>Sally Student</h1>
+            <p>A software engineering student, passionate about coding.</p>
+          </header>
+          <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+            </ul>
+          </section>
+          <section id="education">
+            <h2>Education</h2>
+            <p>Enter Sally's education info here</p>
+          </section>
+          <section id="employmentHistory">
+            <h2>Employment History</h2>
+            <p>Enter Sally's employment history info here</p>
+          </section>
+          <address id="contactInfo">
+            <h2>Contact Info</h2>
+            <img
+              src="sally-student.jpg"
+              alt="photo of sally student"
+              width="300px"
+            />
+            <p>Telephone: +1 512 320-2020</p>
+            <p>E-mail: sally.student@gmail.com</p>
+            <p>
+              Twitter:
+              <a
+                href="https://twitter.com/search?q=coding&src=typed_query"
+                target="_blank"
+              >
+                @sally_student
+              </a>
+            </p>
+          </address>
+        </main>,
+        document.querySelector("#application-root")
+      );
+    </script>
+  </body>
+</html>
